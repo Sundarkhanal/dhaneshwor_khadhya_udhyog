@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+// @ts-expect-error ScrollToTop is currently implemented as an untyped JSX module.
+import ScrollToTop from "./components/ScrollToTop"
 
 // @ts-expect-error Navbar is currently implemented as an untyped JSX module.
 import Navbar from "./components/Navbar";
@@ -36,6 +38,8 @@ import Client from "./components/Clients"
 function App() {
   return (
     <div className="min-h-screen bg-[#FFF4E6]">
+
+      <ScrollToTop />
 
       <Navbar />
 
